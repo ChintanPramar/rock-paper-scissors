@@ -6,20 +6,16 @@ function getComputerChoice() {
 
 function playRound(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
-  
+
   if (playerSelection === computerSelection) {
     return `Game Tie! ${playerSelection} can not beat ${computerSelection}`;
-  } 
-  
-  else if (
+  } else if (
     (playerSelection === "rock" && computerSelection === "scissor") ||
     (playerSelection === "paper" && computerSelection === "rock") ||
     (playerSelection === "scissor" && computerSelection === "paper")
   ) {
     return `You win! ${playerSelection} beat ${computerSelection}`;
-  } 
-  
-  else {
+  } else {
     return `You loss!  ${playerSelection} beat ${computerSelection} `;
   }
 }
@@ -34,4 +30,4 @@ function game() {
   }
 }
 
-game();
+// game();

@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Sicissors</title>
-    <style>
-        body{
-            background-color: darkslategray;
-        }
-    </style>
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>The Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+      <div id="info">
+        <div id="p-score">Player Score: 0</div>
+        <div id="win-loss-info">Click the button to play</div>
+        <div id="c-score">Computer Score: 0</div>
+      </div>
+
+      <div id="playGround">
+        <div id="player" class="box">
+          <h3>Player</h3>
+          <div id="chosen-emoji">&#x1FAA8;</div>
+        </div>
+        <div id="tagLine">Can not beat!</div>
+        <div id="computer" class="box">
+          <h3>Computer</h3>
+          <div id="chosen-emoji">&#x1FAA8;</div>
+        </div>
+      </div>
+
+      <div id="button-box">
+        <button id="button-rock" class="btn" type="button" value="rock">
+          Rock
+        </button>
+        <button id="button-paper" class="btn" type="button" value="paper">
+          Paper
+        </button>
+        <button id="button-scissor" class="btn" type="button" value="scissor">
+          Scissor
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Copyright reserved &copy;2022 by Chintan Parmar at 30-11-2022 time 4:57
+        PM
+      </p>
+    </footer>
+  </body>
 </html>
